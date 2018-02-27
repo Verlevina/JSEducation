@@ -1,0 +1,152 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+
+
+
+
+
+
+<!--калькуляттор-->
+<div class="mainDiv">
+
+
+        <table class='border' id="calc">
+            <caption class='border'><span class='border clear' id="clear">C</span><span  class="result" id="result"></span></caption>
+            <tr>
+                <td class='border calc'>7</td>
+                <td class='border calc'>8</td>
+                <td class='border calc'>9</td>
+                <td class='border calc'>/</td>
+            </tr>
+            <tr>
+                <td class='border calc'>4</td>
+                <td class='border calc'>5</td>
+                <td class='border calc' >6</td>
+                <td class='border calc'>*</td>
+            </tr>
+            <tr>
+                <td class='border calc'>1</td>
+                <td class='border calc'>2</td>
+                <td class='border calc'>3</td>
+                <td class='border calc'>-</td>
+            </tr>
+            <tr>
+                <td class='border calc'>0</td>
+                <td class='border calc'>.</td>
+                <td class='border calc'>=</td>
+                <td class='border calc'>+</td>
+            </tr>
+
+        </table>
+</div>
+
+        крестики-нолики
+<div class="mainDiv">
+    <div class="XOWrapper">
+        <div class="XOLeftDiv">
+    <table id="XO" cellspacing="0" data-beginX="">
+        <tr>
+            <td class="border xotd"></td>
+            <td class="border xotd"></td>
+            <td class="border xotd"></td>
+        </tr>
+        <tr>
+            <td class="border xotd"></td>
+            <td class="border xotd"></td>
+            <td class="border xotd"></td>
+        </tr>
+        <tr>
+            <td class="border xotd"></td>
+            <td class="border xotd"></td>
+            <td class="border xotd"></td>
+        </tr>
+    </table>
+            <span>Ходит:<span id="XOrO">X</span></span><br>
+            <input type="button" class='XOResetButton' id="XOResetButton" value="Заново">
+        </div>
+        <div class="XORightDiv">
+            <span>
+            Выиграл x:
+                </span><span id="XVictory">0</span><br>
+            <span>
+            Выиграл 0:
+            </span><span id="OVictory">0</span><br>
+            <span>
+            Ничья:
+           <span id="noWin"> </span></span>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    </div>
+<!--тест номер 1-->
+
+        <div class="test1">
+            <form>
+                <ul>
+                    <li>JavaScript это тоже самое что и Java?</li>
+                    <ul>
+                        <li> <input type="radio" name="ask0" checked value="">Нет.</li>
+                        <li> <input type="radio" name="ask0" value="">Да.</li>
+                        <li> <input type="radio" name="ask0" value="">Когда как.</li>
+                    </ul>
+                    <li> Сколько параментров можно передавать в фукнцию?</li>
+                    <ul>
+                        <li> <input type="radio" name="ask1" checked value="">Только столько, сколько указано при ее созданиию.</li>
+                        <li> <input type="radio" name="ask1" value="">Минимум 1.</li>
+                        <li> <input type="radio" name="ask1" value="">Сколько угодно.</li>
+                    </ul>
+                    <li>  Что такое: "use strict"?</li>
+                    <ul>
+                        <li><input type="radio" name="ask2" checked value="">Просто строка.</li>
+                        <li><input type="radio" name="ask2" value="">Фукцния.</li>
+                        <li><input type="radio" name="ask2" value="">Строгий режим.</li>
+                    </ul>
+                </ul>
+              <div class="testDiv">  <input type="button" id="testIt" value="Проверить"></div>
+            </form>
+
+        </div>
+
+
+
+
+
+<!--Чеклист-->
+        <div id="wrapCheckList">
+        <div class="checkList">
+<input type="text" id="inputTask" class="inputTask" placeholder="Введите задачу" >
+        </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+        <script src="js/main.js"></script>
+
+
+    </body>
+</html>
